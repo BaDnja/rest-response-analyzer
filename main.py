@@ -76,8 +76,8 @@ def fetch_and_generate_schema(url: str) -> Dict[str, Any]:
     """
     Fetch data from an API and generate its schema.
     """
+    # Sometimes, you will not be using token to authenticate, so change this part as needed.
     token = "replaceWithRealToken"
-
     headers = {
         "Authorization": f"Bearer {token}",
         "accept": "application/json",
